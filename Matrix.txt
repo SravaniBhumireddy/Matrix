@@ -1,0 +1,16 @@
+row=int(input())
+column=int(input())
+l=[]
+s,sum=0
+for i in range(row):
+  for i in range(column):
+    print(l[i])
+  if s=="+":
+    sum=l[1][0]+l[0][1]+l[1][1]+l[1][2]+l[2][1]
+  if s=="-":
+    sum=l[1][0]+l[1][1]+l[1][2]
+  if s=="*":
+    sum=l[0][0]+l[1][1]+l[2][2]+l[0][2]+l[2][0]
+  if s=="/":
+    sum=l[0][2]+l[1][1]+l[2][0]
+print(sum)
